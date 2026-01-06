@@ -1,0 +1,185 @@
+kda@pop-os:~$ ipython
+Python 3.10.12 (main, Nov  4 2025, 08:48:33) [GCC 11.4.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.37.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import vpython
+
+In [2]:                                                                                                                                                                                
+Do you really want to exit ([y]/n)? 
+kda@pop-os:~$ 
+kda@pop-os:~$ 
+kda@pop-os:~$ ipython
+Python 3.10.12 (main, Nov  4 2025, 08:48:33) [GCC 11.4.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.37.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import vpython
+
+In [2]: dist = sqrt(2.5 ** 2 + 0.3 ** 2 + (-2) ** 2)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[2], line 1
+----> 1 dist = sqrt(2.5 ** 2 + 0.3 ** 2 + (-2) ** 2)
+
+NameError: name 'sqrt' is not defined
+
+In [3]: from math import *
+
+In [4]: dist = sqrt(2.5 ** 2 + 0.3 ** 2 + (-2) ** 2)
+
+In [5]: dist
+Out[5]: 3.215587038162705
+
+In [6]: print(mag(2.5, 03, -2))
+  Cell In[6], line 1
+    print(mag(2.5, 03, -2))
+                   ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+
+
+In [7]: print(mag(2.5, 0.3, -2))
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[7], line 1
+----> 1 print(mag(2.5, 0.3, -2))
+
+NameError: name 'mag' is not defined
+
+In [8]: vector = vetor(2.5, 0.3, -2)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[8], line 1
+----> 1 vector = vetor(2.5, 0.3, -2)
+
+NameError: name 'vetor' is not defined
+
+In [9]: vector = vector(2.5, 0.3, -2)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[9], line 1
+----> 1 vector = vector(2.5, 0.3, -2)
+
+NameError: name 'vector' is not defined
+
+In [10]: from vpython import *
+
+In [11]: vector = vector(2.5, 0.3, -2)
+
+In [12]: mag(vector)
+Out[12]: 3.215587038162705
+
+In [13]: a = vector(1,2,3)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[13], line 1
+----> 1 a = vector(1,2,3)
+
+TypeError: 'vpython.cyvector.vector' object is not callable
+
+In [14]: a = vector(1,2,3)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[14], line 1
+----> 1 a = vector(1,2,3)
+
+TypeError: 'vpython.cyvector.vector' object is not callable
+
+In [15]: 00
+Out[15]: 0
+
+In [16]: 0 0
+  Cell In[16], line 1
+    0 0
+      ^
+SyntaxError: invalid syntax
+
+
+In [17]: C
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[17], line 1
+----> 1 C
+
+NameError: name 'C' is not defined
+
+In [18]: restart kernel
+  Cell In[18], line 1
+    restart kernel
+            ^
+SyntaxError: invalid syntax
+
+
+In [19]:                                                                                                                                                                               
+Do you really want to exit ([y]/n)? 
+kda@pop-os:~$  00
+00: command not found
+kda@pop-os:~$ 0 0 
+0: command not found
+kda@pop-os:~$ restart kernel
+Command 'restart' not found, did you mean:
+  command 'restartd' from deb restartd (0.2.3-1.1)
+  command 'rstart' from deb x11-session-utils (7.7+4build2)
+Try: sudo apt install <deb name>
+kda@pop-os:~$ ipython
+Python 3.10.12 (main, Nov  4 2025, 08:48:33) [GCC 11.4.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.37.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: a = vector(1,2,3)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 a = vector(1,2,3)
+
+NameError: name 'vector' is not defined
+
+In [2]: from vpython import *
+
+In [3]: a = vector(1,2,3)
+
+In [4]: a_hat = hat(a)
+
+In [5]: print(a_hat)
+<0.267261, 0.534522, 0.801784>
+
+In [6]: mag(a_hat)
+Out[6]: 1.0
+
+In [7]: ri = vector(-0.5, 3, 0)
+
+In [8]: v = vector(0, -0.01, 0)
+
+In [9]: rf = ri + v * 20
+
+In [10]: rf
+Out[10]: vector(-0.5, 2.8, 0)
+
+In [11]: mag(rf)
+Out[11]: 2.8442925306655784
+
+In [12]: rf - ri
+Out[12]: vector(0, -0.2, 0)
+
+In [13]: (rf - ri)  / v
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[13], line 1
+----> 1 (rf - ri)  / v
+
+TypeError: unsupported operand type(s) for /: 'vpython.cyvector.vector' and 'vpython.cyvector.vector'
+
+In [14]: mag(rf - ri) / mag(v)
+Out[14]: 20.000000000000018
+
+In [15]: t = dot(rf - ri, v) / dot(v, v)
+    ...: 
+
+In [16]: t
+Out[16]: 20.000000000000018
+
+In [17]:                                                                                                                                                                               
+Do you really want to exit ([y]/n)? n
+
+In [17]: 
+
