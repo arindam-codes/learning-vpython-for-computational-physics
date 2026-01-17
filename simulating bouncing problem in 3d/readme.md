@@ -1,6 +1,6 @@
 # Learning Physics by Simulation
 
-## Problem Reflection — Bouncing Particle (Matter & Interactions •••P79)
+## Problem Reflection — Bouncing Particle (Matter & Interactions Chapter 1 •••P79)
 
 This problem took me significant time, not because it was computationally difficult, but because I deliberately chose to solve it **from scratch using first principles**, without copying a ready-made approach.
 
