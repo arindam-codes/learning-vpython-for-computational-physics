@@ -51,7 +51,7 @@ W = Delta K
 
 Since total work done is zero:
 [
-Delta K = 0 \Rightarrow K_i = K_f \Rightarrow |v_i| = |v_f|
+Delta K = 0 -> K_i = K_f -> |v_i| = |v_f|
 ]
 
 This led to a powerful takeaway:
