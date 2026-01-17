@@ -7,6 +7,6 @@
 ---
 
 ## Bouncing Ball
-[[Simulation](https://www.glowscript.org/#/user/arindam.bhattacharjee.codes/folder/testing/program/bouncing.py)]
 
+[[Simulation]](https://www.glowscript.org/#/user/arindam.bhattacharjee.codes/folder/testing/program/bouncing.py)
 ---
